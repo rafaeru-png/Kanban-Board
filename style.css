@@ -1,0 +1,133 @@
+body {
+   margin: 0;
+   width: 100vw;
+   height: 100vh;
+   font-family: Arial, sans-serif;
+   background: linear-gradient(149deg, rgba(82,1,129,1) 0%, rgba(156,39,216,1) 37%, rgba(195,112,232,1) 66%);
+}
+
+.kanban-board {
+   display: flex;
+   padding: 25px;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.kanban-column {
+   margin: 10px;
+   max-width: 280px;
+   border-radius: 12px;
+   width: calc(33.33% - 20px);
+   background-color: #b0aab1;
+   box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+}
+
+.kanban-header1 {
+   padding: 10px;
+   font-weight: bold;
+   text-align: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background-color: rgb(187, 18, 253);
+   border-top: 3px solid rgba(0,0,0,0.6);
+   border-left: 2px solid rgba(0,0,0,0.6);
+   border-right: 2px solid rgba(0,0,0,0.6);
+}
+
+.kanban-header2 {
+   padding: 10px;
+   font-weight: bold;
+   text-align: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background-color: rgb(140, 0, 175);
+   border-top: 3px solid rgba(0,0,0,0.4);
+   border-left: 2px solid rgba(0,0,0,0.4);
+   border-right: 2px solid rgba(0,0,0,0.4);
+}
+
+.kanban-header3 {
+   padding: 10px;
+   font-weight: bold;
+   text-align: center;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background-color: rgb(83, 0, 104);
+   border-top: 3px solid rgba(0,0,0,0.4);
+   border-left: 2px solid rgba(0,0,0,0.4);
+   border-right: 2px solid rgba(0,0,0,0.4);
+}
+
+#headertext {
+   color: #fff;
+}
+
+.kanban-cards {
+   padding: 5px;
+}
+
+.kanban-card {
+   padding: 4px;
+   color: #8d01a0;
+   text-align: center;
+   border-radius: 5px;
+   margin-bottom: 13px;
+   font-weight: bold;
+   background: rgb(230, 230, 230);
+   box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+   border: 2px solid rgba(128, 20, 175, 0.596);
+}
+
+.kanban-add-card {
+   padding: 7px;
+}
+
+.kanban-add-card textarea {
+   width: 98%;
+   resize: none;
+   border: none;
+   padding: 1px;
+   font-size: 17px;
+   border-radius: 5px;
+   text-align: center;
+   margin-bottom: 5px;
+   background: rgb(244, 244, 245);
+   border: 1px solid rgba(82,1,129,1);
+   box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+}
+
+.kanban-add-card textarea:hover {
+   background: rgb(210, 182, 216);
+   transition: 0.7s;
+}
+
+.kanban-add-card button {
+   border: none;
+   color: #fff;
+   cursor: pointer;
+   margin-top: 5px;
+   padding: 5px 10px;
+   border-radius: 7px;
+   background-color: #e100ff;
+}
+
+#botaoadd {
+   display: none;
+}
+
+.delete-task-button {
+   float: right;
+   color: black;
+   font-size: 15px;
+   cursor: pointer;
+   font-weight: bold;
+   border-radius: 50px;
+   background-color: #f558e8f8;
+   border: 1px solid rgb(62, 1, 97);
+}
+
+.delete-task-button:hover {
+   background: rgba(117, 1, 167, 0.521);
+   transition: 0.7s;
+
+}
